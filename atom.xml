@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://letcoder.cn/"/>
-  <updated>2019-07-22T03:22:41.078Z</updated>
+  <updated>2019-07-22T03:51:43.948Z</updated>
   <id>https://letcoder.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web学习路线</title>
+    <link href="https://letcoder.cn/2019/07/22/web/"/>
+    <id>https://letcoder.cn/2019/07/22/web/</id>
+    <published>2019-07-22T03:50:06.000Z</published>
+    <updated>2019-07-22T03:51:43.948Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Web前端入门的自学路线"><a href="#Web前端入门的自学路线" class="headerlink" title="Web前端入门的自学路线"></a>Web前端入门的自学路线</h3><p>新手入门前端，需要学习的基础内容有很多，如下。</p><p>博主现在正在努力学习前端ing</p><a id="more"></a><p>一、HTML、CSS基础、JavaScript语法基础。学完基础后，可以仿照电商网站（例如京东、小米）做首页的布局。</p><p>二、JavaScript语法进阶。包括：作用域和闭包、this和对象原型等。相信我，JS语法，永远是面试中最重要的部分。</p><p>三、jQuery、Ajax等。</p><p>四、ES6语法。这部分属于JS新增的语法，面试必问。其中，关于promise、async等内容要尤其关注。</p><p>五、HTML5和CSS3。要熟悉其中的新特性。</p><p>六、canvas。面试时，有的公司不一定会问canvas，靠运气。如果时间不够，这部分的内容可以先不学。</p><p>七、移动Web开发、Bootstrap等。要注意移动开发中的适配和兼容性问题。</p><p>八、前端框架：Vue.js和React。这两个框架至少要会一个。入门时，建议先学Vue.js，上手相对容易。</p><p>九、Node.js。属于加分项，如果时间不够，可以先不学，但至少要知道 node 环境的配置。</p><p>十、自动化工具：构建工具 Webpack、构建工具 gulp、CSS 预处理器 Sass 等。注意，Sass 比 Less 用得多，gulp 比 grunt 用得多。</p><p>十一、前端综合：HTTP协议、跨域通信、安全问题（CSRF、XSS）、浏览器渲染机制、异步和单线程、页面性能优化、防抖动（Debouncing）和节流阀（Throtting）、lazyload、前端错误监控、虚拟DOM等。</p><p>十二、编辑器相关。Sublime Text 是每个学前端的人都要用到的编辑器。另外，前端常见的IDE有两个：WebStorm 和 Visual Studio Code。WebStorm什么都好，可就是太卡顿；VS Code就相对轻量很多。个人总结一下：新手一般用 WebStorm，入门之后，用 VS Code 的人更多。</p><hr><h3 id="推荐的图文教程"><a href="#推荐的图文教程" class="headerlink" title="推荐的图文教程"></a>推荐的图文教程</h3><p>原作者在GitHub上有一个Web前端入门的学习教程，非常详细，地址是：<br><a href="https://github.com/qianguyihao/Web" target="_blank" rel="noopener">https://github.com/qianguyihao/Web</a></p><p>非常详细和贴心，你值得star。</p><h3 id="推荐的技术博客"><a href="#推荐的技术博客" class="headerlink" title="推荐的技术博客"></a>推荐的技术博客</h3><p>阮一峰 <a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/</a></p><p>张鑫旭 <a href="https://www.zhangxinxu.com/wordpress/" target="_blank" rel="noopener">https://www.zhangxinxu.com/wordpress/</a></p><h3 id="推荐的书籍"><a href="#推荐的书籍" class="headerlink" title="推荐的书籍"></a>推荐的书籍</h3><p>《你不知道的JavaScript》<br>上面这套书有上、中、下三本，你都可以读一读。如果时间不够，那就先读第一本。</p><p>《网络是怎样连接的》<br>程序员面试的时候，经常会被问的一个问题是：“在浏览器的地址栏输入url，按下回车后，发生了什么？”</p><p>为了清楚这个问题，看上面这本书，足够了。如果你想入门计算机网络，这本书也是必读的。评价非常高。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Web前端入门的自学路线&quot;&gt;&lt;a href=&quot;#Web前端入门的自学路线&quot; class=&quot;headerlink&quot; title=&quot;Web前端入门的自学路线&quot;&gt;&lt;/a&gt;Web前端入门的自学路线&lt;/h3&gt;&lt;p&gt;新手入门前端，需要学习的基础内容有很多，如下。&lt;/p&gt;
+&lt;p&gt;博主现在正在努力学习前端ing&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习路线" scheme="https://letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    
+    
+      <category term="学习路线" scheme="https://letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>提问的艺术</title>
@@ -40,42 +63,11 @@
   </entry>
   
   <entry>
-    <title>c++</title>
-    <link href="https://letcoder.cn/2019/07/22/c/"/>
-    <id>https://letcoder.cn/2019/07/22/c/</id>
-    <published>2019-07-22T03:05:35.000Z</published>
-    <updated>2019-07-22T03:06:17.673Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="PHP开发" scheme="https://letcoder.cn/categories/PHP%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="wnmp" scheme="https://letcoder.cn/categories/PHP%E5%BC%80%E5%8F%91/wnmp/"/>
-    
-    
-      <category term="开发环境" scheme="https://letcoder.cn/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java学习路线</title>
     <link href="https://letcoder.cn/2019/07/22/java/"/>
     <id>https://letcoder.cn/2019/07/22/java/</id>
     <published>2019-07-22T02:55:39.000Z</published>
-    <updated>2019-07-22T02:59:01.505Z</updated>
+    <updated>2019-07-22T03:49:42.258Z</updated>
     
     <content type="html"><![CDATA[<p>个人认为比较好的Java学习路线  转自群里某大佬<br>涉及：</p><a id="more"></a><h4 id="Java基础："><a href="#Java基础：" class="headerlink" title="Java基础："></a><strong>Java基础：</strong></h4><ul><li><p>环境搭建、java编译运行机制、数制、计算机基础</p></li><li><p>Java语法基础</p></li><li><p>Java面向对象编程</p></li><li><p>JDK核心API</p></li><li><p>Java界面编程（AWT）</p></li><li><p>Java高级知识（IO、多线程、异常处理、网络通信）</p></li></ul><h4 id="数据库及Web前端技术："><a href="#数据库及Web前端技术：" class="headerlink" title="数据库及Web前端技术："></a><strong>数据库及Web前端技术：</strong></h4><ul><li><p>SQL语言</p></li><li><p>MySql数据库</p></li><li><p>HTML基础、CSS基础、HTML5技术、CSS技术、JavaScript、XML</p></li><li><p>Bootstrap</p></li><li><p>jQuery、Ajax</p></li></ul><h4 id="Servlet技术、JSP-技术："><a href="#Servlet技术、JSP-技术：" class="headerlink" title="** Servlet技术、JSP 技术：**"></a>** Servlet技术、JSP 技术：**</h4><ul><li><p>JDBC核心API、JDBC 优化</p></li><li><p>反射</p></li><li><p>SVN/Maven/log4j</p></li></ul><h4 id="Java-Web开发及服务端框架（轻量级Java-EE）-："><a href="#Java-Web开发及服务端框架（轻量级Java-EE）-：" class="headerlink" title="** Java Web开发及服务端框架（轻量级Java EE）**："></a>** Java Web开发及服务端框架（轻量级Java EE）**：</h4><ul><li><p>Struts2</p></li><li><p>Hibernate</p></li><li><p>Mybatis</p></li><li><p>SprintIOC、SpringAOP、SpringMVC、SpringBoot、SpringCloud</p></li><li><p>WebService核心概念、WebService组件、SOA</p></li><li><p>git/github</p></li><li><p>Activity</p></li></ul><h4 id="项目实战："><a href="#项目实战：" class="headerlink" title="项目实战："></a><strong>项目实战：</strong></h4><p>涉及知识点除Java、Web、Mysql等基本知识点外，还综合运用Hibernate、Struts、Spring、maven、JUnit、DOM4J、JAXP、Log4J、jquery easyui、Workflow、Freemarker等技术，项目通过多层架构、工作流引擎等串起整个Java开发知识体系，从需求分析开始，运用UML、设计模式等进行设计，然后编码，同时在Linux/Unix上进行部署，实现企业软件开发的全过程。</p><h4 id="互联网新技术："><a href="#互联网新技术：" class="headerlink" title="互联网新技术："></a><strong>互联网新技术：</strong></h4><ul><li><p>分布式架构的注册中心Zookeeper</p></li><li><p>全文索引数据库Elasticsearch</p></li><li><p>日志接收，转发工具Logstash</p></li><li><p>可视化数据分析平台Kibana</p></li><li><p>分布式发布-消息订阅系统kafka</p></li><li><p>虚拟化应用容器Docker</p></li></ul><h4 id="持续集成部分："><a href="#持续集成部分：" class="headerlink" title="持续集成部分："></a><strong>持续集成部分：</strong></h4><ul><li><p>持续集成简介</p></li><li><p>持续集成环境搭建</p></li><li><p>最简单的测试job</p></li><li><p>添加HTML测试报告</p></li><li><p>git支持及代码库监控</p></li><li><p>使用jenkins运行单元测试用例</p></li></ul><h4 id="工作经验分享："><a href="#工作经验分享：" class="headerlink" title="工作经验分享："></a><strong>工作经验分享：</strong></h4><ul><li><p>开发工作会用的各种小工具</p></li><li><p>如何单元测试用例</p></li><li><p>代码规范</p></li><li><p>敏捷软件开发的流程</p></li><li><p>需求分析的方法</p></li><li><p>版本管理基本方法</p></li><li><p>项目管理、质量管理</p></li><li><p>Github的使用</p></li></ul><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
     
@@ -85,14 +77,10 @@
     
     </summary>
     
-      <category term="Java" scheme="https://letcoder.cn/categories/Java/"/>
-    
-      <category term="a" scheme="https://letcoder.cn/categories/Java/a/"/>
+      <category term="学习路线" scheme="https://letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
     
-      <category term="Java" scheme="https://letcoder.cn/tags/Java/"/>
-    
-      <category term="a" scheme="https://letcoder.cn/tags/a/"/>
+      <category term="学习路线" scheme="https://letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
   </entry>
   

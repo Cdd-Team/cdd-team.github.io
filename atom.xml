@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://wiki.letcoder.cn/"/>
-  <updated>2019-07-22T03:51:43.948Z</updated>
-  <id>http://wiki.letcoder.cn/</id>
+  <link href="https://wiki.letcoder.cn/"/>
+  <updated>2019-07-22T13:39:13.888Z</updated>
+  <id>https://wiki.letcoder.cn/</id>
   
   <author>
     <name>QXQZX</name>
@@ -17,9 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>windows下python jupyter tensorflow-gpu环境搭建</title>
+    <link href="https://wiki.letcoder.cn/2019/07/22/python-jupyter-tensorflow-gpu/"/>
+    <id>https://wiki.letcoder.cn/2019/07/22/python-jupyter-tensorflow-gpu/</id>
+    <published>2019-07-22T13:30:48.000Z</published>
+    <updated>2019-07-22T13:39:13.888Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="python基本环境搭建"><a href="#python基本环境搭建" class="headerlink" title="python基本环境搭建"></a>python基本环境搭建</h2><ul><li><p>首先<code>https://www.python.org/downloads/windows/</code>下载对应版本的python</p></li><li><p>安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next</p><a id="more"></a><p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_install_01.png" alt="install"></p></li><li><p>检查一下是否安装好了</p><p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cmd_02.png" alt="cmd"></p><p>出现’&gt;&gt;&gt;’就表示安装好了</p></li><li><p>打开cmd 输入<code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ jupyter</code></p><p>-i 是表示用国内源， 清华的比较快</p></li><li><p>然后打开cmd输入<code>jypyter notebook</code> 大功告成</p></li></ul><h2 id="tensorflow环境搭建（需要vs2015或者以上版本）"><a href="#tensorflow环境搭建（需要vs2015或者以上版本）" class="headerlink" title="tensorflow环境搭建（需要vs2015或者以上版本）"></a>tensorflow环境搭建（需要vs2015或者以上版本）</h2><ul><li><p>试一下在jupyter里<code>import tensorflow</code></p><p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_tensorflow_03.png" alt="tensorflow"></p><p>不出意外会有这个报错，所以我们就要去下载cuda 10.0， 后面的链接是给的9.0， 不用管，让下什么版本就下什么版本，不要没事找事。</p></li><li><p><code>https://developer.nvidia.com/cuda-10.0-download-archive</code> cuda 10.0的下载地址</p><p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cuda_04.png" alt="cuda"></p><p>本地版应该比网络版快，点击下载就ok，下载完安装，全部默认，不知道啥用就不要改了。</p></li><li><p>还需要下载cudnn，这个要注册之后才能下载</p><p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/cudnn.png" alt="cudnn"></p><p>下载与cuda对应版本即可， 之后解压， 把解压之后的东西， 放到<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0</code>对应目录下</p></li><li><p>接下来配置环境变量：</p><p>计算机上点右键，打开属性-&gt;高级系统设置-&gt;环境变量，可以看到系统中多了CUDA_PATH和CUDA_PATH_V8_0两个环境变量，接下来，还要在系统中添加以下几个环境变量：</p><p><code>CUDA_SDK_PATH = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.0CUDA_LIB_PATH = %CUDA_PATH%\lib\x64CUDA_BIN_PATH = %CUDA_PATH%\binCUDA_SDK_BIN_PATH = %CUDA_SDK_PATH%\bin\win64CUDA_SDK_LIB_PATH = %CUDA_SDK_PATH%\common\lib\x64</code>‘</p></li><li><p>在系统变量 PATH 的末尾添加：<br><code>CUDA_LIB_PATH%;%CUDA_BIN_PATH%;%CUDA_SDK_LIB_PATH%;%CUDA_SDK_BIN_PATH%;</code><br>再添加如下4条（默认安装路径）：<br><code>:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64；C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin；C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\lib\x64；C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\bin\win64；</code></p></li><li><p>打开<code>cd C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\extras\demo_suite</code></p><p>然后分别执行<code>bandwidthTest.exe</code>和<code>deviceQuery.exe</code>。</p><p>如果都返回Result=PASS就是配置成功了。</p></li><li><p>进入python<code>import tensorflow</code>啥都没发生，好了可以写代码了。</p></li></ul><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href></a></li><li><a href></a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;python基本环境搭建&quot;&gt;&lt;a href=&quot;#python基本环境搭建&quot; class=&quot;headerlink&quot; title=&quot;python基本环境搭建&quot;&gt;&lt;/a&gt;python基本环境搭建&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;首先&lt;code&gt;https://www.python.org/downloads/windows/&lt;/code&gt;下载对应版本的python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="开发环境" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="windows" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/"/>
+    
+      <category term="python开发" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/python%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="python" scheme="https://wiki.letcoder.cn/tags/python/"/>
+    
+      <category term="机器学习" scheme="https://wiki.letcoder.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Web学习路线</title>
-    <link href="http://wiki.letcoder.cn/2019/07/22/web/"/>
-    <id>http://wiki.letcoder.cn/2019/07/22/web/</id>
+    <link href="https://wiki.letcoder.cn/2019/07/22/web/"/>
+    <id>https://wiki.letcoder.cn/2019/07/22/web/</id>
     <published>2019-07-22T03:50:06.000Z</published>
     <updated>2019-07-22T03:51:43.948Z</updated>
     
@@ -32,17 +63,17 @@
     
     </summary>
     
-      <category term="学习路线" scheme="http://wiki.letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+      <category term="学习路线" scheme="https://wiki.letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
     
-      <category term="学习路线" scheme="http://wiki.letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+      <category term="学习路线" scheme="https://wiki.letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
   </entry>
   
   <entry>
     <title>提问的艺术</title>
-    <link href="http://wiki.letcoder.cn/2019/07/22/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/"/>
-    <id>http://wiki.letcoder.cn/2019/07/22/提问的艺术/</id>
+    <link href="https://wiki.letcoder.cn/2019/07/22/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/"/>
+    <id>https://wiki.letcoder.cn/2019/07/22/提问的艺术/</id>
     <published>2019-07-22T03:20:43.000Z</published>
     <updated>2019-07-22T03:22:41.078Z</updated>
     
@@ -55,17 +86,17 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://wiki.letcoder.cn/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://wiki.letcoder.cn/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="杂谈" scheme="http://wiki.letcoder.cn/tags/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://wiki.letcoder.cn/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
   <entry>
     <title>Java学习路线</title>
-    <link href="http://wiki.letcoder.cn/2019/07/22/java/"/>
-    <id>http://wiki.letcoder.cn/2019/07/22/java/</id>
+    <link href="https://wiki.letcoder.cn/2019/07/22/java/"/>
+    <id>https://wiki.letcoder.cn/2019/07/22/java/</id>
     <published>2019-07-22T02:55:39.000Z</published>
     <updated>2019-07-22T03:49:42.258Z</updated>
     
@@ -77,10 +108,10 @@
     
     </summary>
     
-      <category term="学习路线" scheme="http://wiki.letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+      <category term="学习路线" scheme="https://wiki.letcoder.cn/categories/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
     
-      <category term="学习路线" scheme="http://wiki.letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+      <category term="学习路线" scheme="https://wiki.letcoder.cn/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     
   </entry>
   

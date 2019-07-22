@@ -3,24 +3,30 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     
-    <title>Java学习路线 | 一个Wiki站点</title>
+    <title>windows下python jupyter tensorflow-gpu环境搭建 | 一个Wiki站点</title>
     
     
-        <meta name="keywords" content="学习路线">
+        <meta name="keywords" content="python,机器学习">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
-<meta name="keywords" content="学习路线">
+    <meta name="description" content="python基本环境搭建 首先https://www.python.org/downloads/windows/下载对应版本的python  安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next">
+<meta name="keywords" content="python,机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java学习路线">
-<meta property="og:url" content="https://wiki.letcoder.cn/2019/07/22/java/index.html">
+<meta property="og:title" content="windows下python jupyter tensorflow-gpu环境搭建">
+<meta property="og:url" content="https://wiki.letcoder.cn/2019/07/22/python-jupyter-tensorflow-gpu/index.html">
 <meta property="og:site_name" content="一个Wiki站点">
-<meta property="og:description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
+<meta property="og:description" content="python基本环境搭建 首先https://www.python.org/downloads/windows/下载对应版本的python  安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-22T03:49:42.258Z">
+<meta property="og:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_install_01.png">
+<meta property="og:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cmd_02.png">
+<meta property="og:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_tensorflow_03.png">
+<meta property="og:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cuda_04.png">
+<meta property="og:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/cudnn.png">
+<meta property="og:updated_time" content="2019-07-22T13:39:13.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java学习路线">
-<meta name="twitter:description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
+<meta name="twitter:title" content="windows下python jupyter tensorflow-gpu环境搭建">
+<meta name="twitter:description" content="python基本环境搭建 首先https://www.python.org/downloads/windows/下载对应版本的python  安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next">
+<meta name="twitter:image" content="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_install_01.png">
     
 
     
@@ -235,36 +241,36 @@
         
         
          <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            学习路线
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019/07/22/java/">Java学习路线</a></li>  <li class="file"><a href="/2019/07/22/web/">Web学习路线</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory open">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder-open"></i>
                             &nbsp;
-                            学习路线
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2019/07/22/java/">Java学习路线</a></li>  <li class="file"><a href="/2019/07/22/web/">Web学习路线</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
                             开发环境
                         </a>
                          <ul class="unstyled" id="tree" > 
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             windows
                         </a>
                          <ul class="unstyled" id="tree" > 
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             python开发
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019/07/22/python-jupyter-tensorflow-gpu/">windows下python jupyter tensorflow-gpu环境搭建</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2019/07/22/python-jupyter-tensorflow-gpu/">windows下python jupyter tensorflow-gpu环境搭建</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -378,7 +384,7 @@
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
-            <section id="main"><article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-python-jupyter-tensorflow-gpu" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -388,20 +394,20 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/学习路线/">学习路线</a>
+        <a class="article-category-link" href="/categories/开发环境/">开发环境</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/开发环境/windows/">windows</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/开发环境/windows/python开发/">python开发</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/学习路线/">学习路线</a>
+        <a class="tag-link" href="/tags/python/">python</a>, <a class="tag-link" href="/tags/机器学习/">机器学习</a>
     </div>
 
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/07/22/java/">
-            <time datetime="2019-07-22T02:55:39.000Z" itemprop="datePublished">2019-07-22</time>
+        <a href="/2019/07/22/python-jupyter-tensorflow-gpu/">
+            <time datetime="2019-07-22T13:30:48.000Z" itemprop="datePublished">2019-07-22</time>
         </a>
     </div>
 
@@ -412,13 +418,13 @@
                         
                         
                             <div class="article-meta-button">
-                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/raw/master/source/_posts/java.md'> Source </a>
+                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/raw/master/source/_posts/python-jupyter-tensorflow-gpu.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/edit/master/source/_posts/java.md'> Edit </a>
+                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/edit/master/source/_posts/python-jupyter-tensorflow-gpu.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/commits/master/source/_posts/java.md'> History </a>
+                                <a href='https://github.com/Cdd-Team/cdd-team.github.io/commits/master/source/_posts/python-jupyter-tensorflow-gpu.md'> History </a>
                             </div>
                         
                     </div>
@@ -426,7 +432,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            Java学习路线
+            windows下python jupyter tensorflow-gpu环境搭建
         </h1>
     
 
@@ -439,116 +445,66 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">文章目录</strong>
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java基础："><span class="toc-number">1.</span> <span class="toc-text">Java基础：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库及Web前端技术："><span class="toc-number">2.</span> <span class="toc-text">数据库及Web前端技术：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Servlet技术、JSP-技术："><span class="toc-number">3.</span> <span class="toc-text">** Servlet技术、JSP 技术：**</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java-Web开发及服务端框架（轻量级Java-EE）-："><span class="toc-number">4.</span> <span class="toc-text">** Java Web开发及服务端框架（轻量级Java EE）**：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目实战："><span class="toc-number">5.</span> <span class="toc-text">项目实战：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#互联网新技术："><span class="toc-number">6.</span> <span class="toc-text">互联网新技术：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#持续集成部分："><span class="toc-number">7.</span> <span class="toc-text">持续集成部分：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#工作经验分享："><span class="toc-number">8.</span> <span class="toc-text">工作经验分享：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number"></span> <span class="toc-text">参考资料</span></a>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python基本环境搭建"><span class="toc-number">1.</span> <span class="toc-text">python基本环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tensorflow环境搭建（需要vs2015或者以上版本）"><span class="toc-number">2.</span> <span class="toc-text">tensorflow环境搭建（需要vs2015或者以上版本）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">3.</span> <span class="toc-text">参考资料</span></a></li></ol>
                 </div>
             
         
         
-            <p>个人认为比较好的Java学习路线  转自群里某大佬<br>涉及：</p>
+            <h2 id="python基本环境搭建"><a href="#python基本环境搭建" class="headerlink" title="python基本环境搭建"></a>python基本环境搭建</h2><ul>
+<li><p>首先<code>https://www.python.org/downloads/windows/</code>下载对应版本的python</p>
+</li>
+<li><p>安装的时候注意一下几点就ok， 选择自定安装是为了更改安装目录， 如果想安装早C盘， 直接点第一个就行，然后无脑next</p>
 <a id="more"></a>
-<h4 id="Java基础："><a href="#Java基础：" class="headerlink" title="Java基础："></a><strong>Java基础：</strong></h4><ul>
-<li><p>环境搭建、java编译运行机制、数制、计算机基础</p>
+
+<p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_install_01.png" alt="install"></p>
 </li>
-<li><p>Java语法基础</p>
+<li><p>检查一下是否安装好了</p>
+<p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cmd_02.png" alt="cmd"></p>
+<p>出现’&gt;&gt;&gt;’就表示安装好了</p>
 </li>
-<li><p>Java面向对象编程</p>
+<li><p>打开cmd 输入<code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ jupyter</code></p>
+<p>-i 是表示用国内源， 清华的比较快</p>
 </li>
-<li><p>JDK核心API</p>
-</li>
-<li><p>Java界面编程（AWT）</p>
-</li>
-<li><p>Java高级知识（IO、多线程、异常处理、网络通信）</p>
-</li>
-</ul>
-<h4 id="数据库及Web前端技术："><a href="#数据库及Web前端技术：" class="headerlink" title="数据库及Web前端技术："></a><strong>数据库及Web前端技术：</strong></h4><ul>
-<li><p>SQL语言</p>
-</li>
-<li><p>MySql数据库</p>
-</li>
-<li><p>HTML基础、CSS基础、HTML5技术、CSS技术、JavaScript、XML</p>
-</li>
-<li><p>Bootstrap</p>
-</li>
-<li><p>jQuery、Ajax</p>
+<li><p>然后打开cmd输入<code>jypyter notebook</code> 大功告成</p>
 </li>
 </ul>
-<h4 id="Servlet技术、JSP-技术："><a href="#Servlet技术、JSP-技术：" class="headerlink" title="** Servlet技术、JSP 技术：**"></a>** Servlet技术、JSP 技术：**</h4><ul>
-<li><p>JDBC核心API、JDBC 优化</p>
+<h2 id="tensorflow环境搭建（需要vs2015或者以上版本）"><a href="#tensorflow环境搭建（需要vs2015或者以上版本）" class="headerlink" title="tensorflow环境搭建（需要vs2015或者以上版本）"></a>tensorflow环境搭建（需要vs2015或者以上版本）</h2><ul>
+<li><p>试一下在jupyter里<code>import tensorflow</code></p>
+<p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_tensorflow_03.png" alt="tensorflow"></p>
+<p>不出意外会有这个报错，所以我们就要去下载cuda 10.0， 后面的链接是给的9.0， 不用管，让下什么版本就下什么版本，不要没事找事。</p>
 </li>
-<li><p>反射</p>
+<li><p><code>https://developer.nvidia.com/cuda-10.0-download-archive</code> cuda 10.0的下载地址</p>
+<p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/python_cuda_04.png" alt="cuda"></p>
+<p>本地版应该比网络版快，点击下载就ok，下载完安装，全部默认，不知道啥用就不要改了。</p>
 </li>
-<li><p>SVN/Maven/log4j</p>
+<li><p>还需要下载cudnn，这个要注册之后才能下载</p>
+<p><img src="https://iqxqzx.gitee.io/pic/images/2019/7/22/cudnn.png" alt="cudnn"></p>
+<p>下载与cuda对应版本即可， 之后解压， 把解压之后的东西， 放到<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0</code>对应目录下</p>
 </li>
-</ul>
-<h4 id="Java-Web开发及服务端框架（轻量级Java-EE）-："><a href="#Java-Web开发及服务端框架（轻量级Java-EE）-：" class="headerlink" title="** Java Web开发及服务端框架（轻量级Java EE）**："></a>** Java Web开发及服务端框架（轻量级Java EE）**：</h4><ul>
-<li><p>Struts2</p>
+<li><p>接下来配置环境变量：</p>
+<p>计算机上点右键，打开属性-&gt;高级系统设置-&gt;环境变量，可以看到系统中多了CUDA_PATH和CUDA_PATH_V8_0两个环境变量，接下来，还要在系统中添加以下几个环境变量：</p>
+<p><code>CUDA_SDK_PATH = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.0
+CUDA_LIB_PATH = %CUDA_PATH%\lib\x64
+CUDA_BIN_PATH = %CUDA_PATH%\bin
+CUDA_SDK_BIN_PATH = %CUDA_SDK_PATH%\bin\win64
+CUDA_SDK_LIB_PATH = %CUDA_SDK_PATH%\common\lib\x64</code>‘</p>
 </li>
-<li><p>Hibernate</p>
+<li><p>在系统变量 PATH 的末尾添加：<br><code>CUDA_LIB_PATH%;%CUDA_BIN_PATH%;%CUDA_SDK_LIB_PATH%;%CUDA_SDK_BIN_PATH%;</code><br>再添加如下4条（默认安装路径）：<br><code>:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64；
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin；
+C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\lib\x64；
+C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\bin\win64；</code></p>
 </li>
-<li><p>Mybatis</p>
+<li><p>打开<code>cd C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\extras\demo_suite</code></p>
+<p>然后分别执行<code>bandwidthTest.exe</code>和<code>deviceQuery.exe</code>。</p>
+<p>如果都返回Result=PASS就是配置成功了。</p>
 </li>
-<li><p>SprintIOC、SpringAOP、SpringMVC、SpringBoot、SpringCloud</p>
-</li>
-<li><p>WebService核心概念、WebService组件、SOA</p>
-</li>
-<li><p>git/github</p>
-</li>
-<li><p>Activity</p>
-</li>
-</ul>
-<h4 id="项目实战："><a href="#项目实战：" class="headerlink" title="项目实战："></a><strong>项目实战：</strong></h4><p>涉及知识点除Java、Web、Mysql等基本知识点外，还综合运用Hibernate、Struts、Spring、maven、JUnit、DOM4J、JAXP、Log4J、jquery easyui、Workflow、Freemarker等技术，项目通过多层架构、工作流引擎等串起整个Java开发知识体系，从需求分析开始，运用UML、设计模式等进行设计，然后编码，同时在Linux/Unix上进行部署，实现企业软件开发的全过程。</p>
-<h4 id="互联网新技术："><a href="#互联网新技术：" class="headerlink" title="互联网新技术："></a><strong>互联网新技术：</strong></h4><ul>
-<li><p>分布式架构的注册中心Zookeeper</p>
-</li>
-<li><p>全文索引数据库Elasticsearch</p>
-</li>
-<li><p>日志接收，转发工具Logstash</p>
-</li>
-<li><p>可视化数据分析平台Kibana</p>
-</li>
-<li><p>分布式发布-消息订阅系统kafka</p>
-</li>
-<li><p>虚拟化应用容器Docker</p>
+<li><p>进入python<code>import tensorflow</code>啥都没发生，好了可以写代码了。</p>
 </li>
 </ul>
-<h4 id="持续集成部分："><a href="#持续集成部分：" class="headerlink" title="持续集成部分："></a><strong>持续集成部分：</strong></h4><ul>
-<li><p>持续集成简介</p>
-</li>
-<li><p>持续集成环境搭建</p>
-</li>
-<li><p>最简单的测试job</p>
-</li>
-<li><p>添加HTML测试报告</p>
-</li>
-<li><p>git支持及代码库监控</p>
-</li>
-<li><p>使用jenkins运行单元测试用例</p>
-</li>
-</ul>
-<h4 id="工作经验分享："><a href="#工作经验分享：" class="headerlink" title="工作经验分享："></a><strong>工作经验分享：</strong></h4><ul>
-<li><p>开发工作会用的各种小工具</p>
-</li>
-<li><p>如何单元测试用例</p>
-</li>
-<li><p>代码规范</p>
-</li>
-<li><p>敏捷软件开发的流程</p>
-</li>
-<li><p>需求分析的方法</p>
-</li>
-<li><p>版本管理基本方法</p>
-</li>
-<li><p>项目管理、质量管理</p>
-</li>
-<li><p>Github的使用</p>
-</li>
-</ul>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
-<ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href></a></li>
 <li><a href></a></li>
 </ul>
-</blockquote>
 
             </div>
         
@@ -561,15 +517,11 @@
     
 <nav id="article-nav">
     
-        <a href="/2019/07/22/提问的艺术/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    提问的艺术
-                
-            </div>
-        </a>
     
+        <a href="/2019/07/22/web/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Web学习路线</div>
+        </a>
     
 </nav>
 

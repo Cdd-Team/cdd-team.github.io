@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    
+    <title>Java学习路线 | 一个Wiki站点</title>
+    
+    
+        <meta name="keywords" content="Java,a">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
+<meta name="keywords" content="Java,a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习路线">
+<meta property="og:url" content="https://letcoder.cn/2019/07/22/java/index.html">
+<meta property="og:site_name" content="一个Wiki站点">
+<meta property="og:description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-22T02:59:01.505Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java学习路线">
+<meta name="twitter:description" content="个人认为比较好的Java学习路线  转自群里某大佬涉及：">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="一个Wiki站点" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/logo.jpg">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">一个Wiki站点</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/afcd4fcd51937d3153412282f515f177" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/afcd4fcd51937d3153412282f515f177?s=128" />
+            <h2 id="name">QXQZX</h2>
+            <h3 id="title">Designer &amp; Programmer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Zibo, China</span>
+            <a id="follow" target="_blank" href="https://github.com/QXQZX">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                3
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                4
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/QXQZX/" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://stackoverflow.com/" target="_blank" title="stack-overflow" class=tooltip>
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://zxnest.club" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://weibo.com" target="_blank" title="weibo" class=tooltip>
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Java
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            a
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2019/07/22/java/">Java学习路线</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            PHP开发
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            wnmp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019/07/22/c/">c++</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            杂谈
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019/07/22/提问的艺术/">提问的艺术</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>标签云</span></h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/a/" style="font-size: 10px;">a</a> <a href="/tags/开发环境/" style="font-size: 10px;">开发环境</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
+        </div>
+    </div>
+
+    
+        
+<div class="widget-wrap widget-list">
+  <h3 class="widget-title"><span>维护成员</span></h3>
+  <div class="widget">
+    <ul>
+      
+      <li>
+        <a href="https://blog.zxnest.club">QXQZX</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java/">Java</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Java/a/">a</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/a/">a</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/07/22/java/">
+            <time datetime="2019-07-22T02:55:39.000Z" itemprop="datePublished">2019-07-22</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href='https://github.com/QXQZX/qxqzx.github.io/raw/writing/source/_posts/java.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/QXQZX/qxqzx.github.io/edit/writing/source/_posts/java.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href='https://github.com/QXQZX/qxqzx.github.io/commits/writing/source/_posts/java.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Java学习路线
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java基础："><span class="toc-number">1.</span> <span class="toc-text">Java基础：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库及Web前端技术："><span class="toc-number">2.</span> <span class="toc-text">数据库及Web前端技术：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Servlet技术、JSP-技术："><span class="toc-number">3.</span> <span class="toc-text">** Servlet技术、JSP 技术：**</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java-Web开发及服务端框架（轻量级Java-EE）-："><span class="toc-number">4.</span> <span class="toc-text">** Java Web开发及服务端框架（轻量级Java EE）**：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目实战："><span class="toc-number">5.</span> <span class="toc-text">项目实战：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#互联网新技术："><span class="toc-number">6.</span> <span class="toc-text">互联网新技术：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#持续集成部分："><span class="toc-number">7.</span> <span class="toc-text">持续集成部分：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#工作经验分享："><span class="toc-number">8.</span> <span class="toc-text">工作经验分享：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number"></span> <span class="toc-text">参考资料</span></a>
+                </div>
+            
+        
+        
+            <p>个人认为比较好的Java学习路线  转自群里某大佬<br>涉及：</p>
+<a id="more"></a>
+<h4 id="Java基础："><a href="#Java基础：" class="headerlink" title="Java基础："></a><strong>Java基础：</strong></h4><ul>
+<li><p>环境搭建、java编译运行机制、数制、计算机基础</p>
+</li>
+<li><p>Java语法基础</p>
+</li>
+<li><p>Java面向对象编程</p>
+</li>
+<li><p>JDK核心API</p>
+</li>
+<li><p>Java界面编程（AWT）</p>
+</li>
+<li><p>Java高级知识（IO、多线程、异常处理、网络通信）</p>
+</li>
+</ul>
+<h4 id="数据库及Web前端技术："><a href="#数据库及Web前端技术：" class="headerlink" title="数据库及Web前端技术："></a><strong>数据库及Web前端技术：</strong></h4><ul>
+<li><p>SQL语言</p>
+</li>
+<li><p>MySql数据库</p>
+</li>
+<li><p>HTML基础、CSS基础、HTML5技术、CSS技术、JavaScript、XML</p>
+</li>
+<li><p>Bootstrap</p>
+</li>
+<li><p>jQuery、Ajax</p>
+</li>
+</ul>
+<h4 id="Servlet技术、JSP-技术："><a href="#Servlet技术、JSP-技术：" class="headerlink" title="** Servlet技术、JSP 技术：**"></a>** Servlet技术、JSP 技术：**</h4><ul>
+<li><p>JDBC核心API、JDBC 优化</p>
+</li>
+<li><p>反射</p>
+</li>
+<li><p>SVN/Maven/log4j</p>
+</li>
+</ul>
+<h4 id="Java-Web开发及服务端框架（轻量级Java-EE）-："><a href="#Java-Web开发及服务端框架（轻量级Java-EE）-：" class="headerlink" title="** Java Web开发及服务端框架（轻量级Java EE）**："></a>** Java Web开发及服务端框架（轻量级Java EE）**：</h4><ul>
+<li><p>Struts2</p>
+</li>
+<li><p>Hibernate</p>
+</li>
+<li><p>Mybatis</p>
+</li>
+<li><p>SprintIOC、SpringAOP、SpringMVC、SpringBoot、SpringCloud</p>
+</li>
+<li><p>WebService核心概念、WebService组件、SOA</p>
+</li>
+<li><p>git/github</p>
+</li>
+<li><p>Activity</p>
+</li>
+</ul>
+<h4 id="项目实战："><a href="#项目实战：" class="headerlink" title="项目实战："></a><strong>项目实战：</strong></h4><p>涉及知识点除Java、Web、Mysql等基本知识点外，还综合运用Hibernate、Struts、Spring、maven、JUnit、DOM4J、JAXP、Log4J、jquery easyui、Workflow、Freemarker等技术，项目通过多层架构、工作流引擎等串起整个Java开发知识体系，从需求分析开始，运用UML、设计模式等进行设计，然后编码，同时在Linux/Unix上进行部署，实现企业软件开发的全过程。</p>
+<h4 id="互联网新技术："><a href="#互联网新技术：" class="headerlink" title="互联网新技术："></a><strong>互联网新技术：</strong></h4><ul>
+<li><p>分布式架构的注册中心Zookeeper</p>
+</li>
+<li><p>全文索引数据库Elasticsearch</p>
+</li>
+<li><p>日志接收，转发工具Logstash</p>
+</li>
+<li><p>可视化数据分析平台Kibana</p>
+</li>
+<li><p>分布式发布-消息订阅系统kafka</p>
+</li>
+<li><p>虚拟化应用容器Docker</p>
+</li>
+</ul>
+<h4 id="持续集成部分："><a href="#持续集成部分：" class="headerlink" title="持续集成部分："></a><strong>持续集成部分：</strong></h4><ul>
+<li><p>持续集成简介</p>
+</li>
+<li><p>持续集成环境搭建</p>
+</li>
+<li><p>最简单的测试job</p>
+</li>
+<li><p>添加HTML测试报告</p>
+</li>
+<li><p>git支持及代码库监控</p>
+</li>
+<li><p>使用jenkins运行单元测试用例</p>
+</li>
+</ul>
+<h4 id="工作经验分享："><a href="#工作经验分享：" class="headerlink" title="工作经验分享："></a><strong>工作经验分享：</strong></h4><ul>
+<li><p>开发工作会用的各种小工具</p>
+</li>
+<li><p>如何单元测试用例</p>
+</li>
+<li><p>代码规范</p>
+</li>
+<li><p>敏捷软件开发的流程</p>
+</li>
+<li><p>需求分析的方法</p>
+</li>
+<li><p>版本管理基本方法</p>
+</li>
+<li><p>项目管理、质量管理</p>
+</li>
+<li><p>Github的使用</p>
+</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
+<ul>
+<li><a href></a></li>
+<li><a href></a></li>
+</ul>
+</blockquote>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2019/07/22/c/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    c++
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            QXQZX &copy; 2019 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

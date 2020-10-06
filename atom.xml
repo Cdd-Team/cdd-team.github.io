@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wiki.letcoder.cn/"/>
-  <updated>2020-02-04T12:11:46.731Z</updated>
+  <updated>2020-10-06T02:49:00.172Z</updated>
   <id>https://wiki.letcoder.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt4andQt5</title>
+    <link href="https://wiki.letcoder.cn/2020/10/06/Qt4andQt5/"/>
+    <id>https://wiki.letcoder.cn/2020/10/06/Qt4andQt5/</id>
+    <published>2020-10-06T02:11:26.000Z</published>
+    <updated>2020-10-06T02:49:00.172Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Qt-creator-Qt4-与-Qt5-环境搭建"><a href="#Qt-creator-Qt4-与-Qt5-环境搭建" class="headerlink" title="Qt creator Qt4 与 Qt5 环境搭建"></a>Qt creator Qt4 与 Qt5 环境搭建</h1><p>教室里的嵌入式机器装的是Qt4，用习惯了新版的Qt creator再用旧版的，有点难以适应。</p><p>所以我就行：反正Qt creator只是个写代码的壳子，套在Qt5上可以，在Qt4上肯定也行</p><a id="more"></a><h2 id="提前准备"><a href="#提前准备" class="headerlink" title="提前准备"></a>提前准备</h2><ul><li>Qt5 这个可以去国内镜像站下载，官方下载比较慢，已经安装的可以跳过这一步</li></ul><p><img src="https://i.loli.net/2020/10/06/KhqPmylL3xRkbgF.png" alt="image-Qt5download"></p><p>Qt5 自带新版Qt creator，比旧版的creator好用很多</p><p><code>http://mirrors.ustc.edu.cn/qtproject/archive/qt/5.14/5.14.2/</code> 下载带windows字样的文件就可以了</p><p>下载完直接安装</p><ul><li><p>下载MinGW</p><p>我准备下4.8.7版本的Qt4</p><p><strong>不同版本的Qt需要不同版本的MinGW，不要下错了！！！</strong></p></li></ul><p><img src="https://i.loli.net/2020/10/06/1Y2nfsjRaTvzA5B.png" alt="image-mingwdownload"></p><p><code>https://wiki.qt.io/MinGW</code></p><p><strong>下载好解压，等会要用</strong></p><ul><li><p>Qt4 sdk</p><p>这个东西在国内镜像找不到了，只能去官网下载</p><p><code>http://download.qt.io/archive/qt/4.8/4.8.7/</code></p><p><img src="https://i.loli.net/2020/10/06/IouHrDif7ORtYQN.png" alt="image-Qt4download"></p><p>下载也是安装就行，中间会让你选择MinGW的路径，找到刚才解压的文件，进入找到bin所在的路径，粘贴上就行</p><p><strong>路径不要带着 <code>bin</code></strong>  点到为止</p></li></ul><p><img src="https://i.loli.net/2020/10/06/D1kabGXMe6OZNd7.png" alt="image-mingwpath"></p><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ul><li><p>打开Qt creator, 现在是Qt5的环境</p><p><code>工具-&gt;选项-&gt;Kits</code> 我们就是修改这里的内容</p></li><li><p>点开<code>编译器选项卡</code></p><p><code>添加-&gt;MinGW</code> C/C++都要修改</p><p>这以C++为例</p><p>  <img src="https://i.loli.net/2020/10/06/dwNXro4H8FLxpjI.png" alt="image-compilers"></p><p><strong>C     ==&gt; gcc.exe</strong></p><p><strong>C++ ==&gt; g++.exe</strong></p></li></ul><ul><li><p>同样的方式 改一下Debuggers</p><p>查找 <strong>mingw/bin/gdb.exe</strong></p></li><li><p>接下来打开Qt Versions</p><p><code>添加</code> 然后找到你安装Qt4的目录，选择 <strong>bin/qmake.exe</strong>  前面没有红色感叹号 说明成功了</p><p><img src="https://i.loli.net/2020/10/06/SbisAkG5BzZqQKl.png" alt="image-Qt Versions"></p></li><li><p>最后 构建套件(Kit)</p><p>依旧点击添加，修改红色框起来的部分就可以了</p><p><img src="https://i.loli.net/2020/10/06/Expvm51sQe3RLkD.png" alt="image-Kits"></p></li></ul><p>环境搭建完成！</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>新建项目，可以选一个 也可以两个都选</p><p><img src="https://i.loli.net/2020/10/06/zMcno6lhbrdCLeg.png" alt="image-newporject"></p><p>新建的项目 会有这些警告，可以编译可以运行，就是警告看着难受。</p><p><img src="https://i.loli.net/2020/10/06/IFYs6K5N4AzpJPu.png" alt="image-warnings3"></p><p><code>帮助-&gt;关于</code>把这个插件关掉就行了。</p><p><img src="https://i.loli.net/2020/10/06/UQSkdtlT3V5IEKg.png" alt="image-plugins"></p><p><strong>Qt4 不支持<code>nullptr</code>关键字，要手动改成0或者NULL</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QWidget&gt;</span></span></span><br><span class="line"></span><br><span class="line">QT_BEGIN_NAMESPACE</span><br><span class="line"><span class="keyword">namespace</span> Ui &#123; <span class="class"><span class="keyword">class</span> <span class="title">Widget</span>;</span> &#125;</span><br><span class="line">QT_END_NAMESPACE</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Widget</span> :</span> <span class="keyword">public</span> QWidget</span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="comment">//    Widget(QWidget *parent = nullptr);</span></span><br><span class="line">    Widget(QWidget *parent = <span class="number">0</span>);</span><br><span class="line">    ~Widget();</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Ui::Widget *ui;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Qt-creator-Qt4-与-Qt5-环境搭建&quot;&gt;&lt;a href=&quot;#Qt-creator-Qt4-与-Qt5-环境搭建&quot; class=&quot;headerlink&quot; title=&quot;Qt creator Qt4 与 Qt5 环境搭建&quot;&gt;&lt;/a&gt;Qt creator Qt4 与 Qt5 环境搭建&lt;/h1&gt;&lt;p&gt;教室里的嵌入式机器装的是Qt4，用习惯了新版的Qt creator再用旧版的，有点难以适应。&lt;/p&gt;
+&lt;p&gt;所以我就行：反正Qt creator只是个写代码的壳子，套在Qt5上可以，在Qt4上肯定也行&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="开发环境" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="windows" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/"/>
+    
+      <category term="Qt开发" scheme="https://wiki.letcoder.cn/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/Qt%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Qt4" scheme="https://wiki.letcoder.cn/tags/Qt4/"/>
+    
+      <category term="Qt5" scheme="https://wiki.letcoder.cn/tags/Qt5/"/>
+    
+      <category term="Qt creator" scheme="https://wiki.letcoder.cn/tags/Qt-creator/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx无法挂载/root目录的静态资源</title>
